@@ -13,7 +13,7 @@ public class Main extends JavaPlugin implements Listener {
 	}
 	@EventHandler
 	public void EntityDamage(EntityDamageEvent e) {
-		if ((e.getEntityType()==EntityType.PLAYER) && (e.getCause()==DamageCause.FALL)) {
+		if ((e.getEntityType() == EntityType.PLAYER) && (e.getCause() == DamageCause.FALL)) {
 			((Player) e.getEntity()).playSound(((Player) e.getEntity()).getLocation(), Sound.HURT, 1, 0);
 		}
 	}
